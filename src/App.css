@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap');
+
 
 body{
     background-color: #a9def9;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', sans-serif;
 }
 
 .container{
@@ -52,10 +52,12 @@ h1 {
     outline: none;
     text-indent: 10px;
     margin-bottom: 30px;
+    font-family: 'Courier New', sans-serif;
 }
-  
-.task-input::placeholder{
-    opacity: 50%;
+
+.task-input::placeholder {
+    opacity: 70%;
+    font-family: Arial,sans-serif;
 }
   
 .add-button{
@@ -81,7 +83,7 @@ h1 {
     background-color: white;
     align-items: center;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
     cursor: pointer;
     border: 1px solid #F77F00;
     text-indent: 10px;
@@ -114,7 +116,6 @@ h1 {
 .footer{
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
     color: #F77F00;
     margin-top: 60px;
 }
@@ -172,5 +173,11 @@ h1 {
     .add-button{
         width: 60px;
         height: 40px;
+    }
+
+    .TodoForm{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 }
