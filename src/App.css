@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+body{
+    background-color: #a9def9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', sans-serif;
+}
+
+.container{
+    margin-top: 100px;
+    width: 600px;
+    min-height: 400px;
+    background-color: white;
+    border: 1px;
+    border-radius: 10px;
+    transition: ease all .3s;
+}
+  
+h1 {
+    color: #f77f00;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Black Ops One', sans-serif;
+}
+  
+.task-container{
+    padding: 50px;
+    padding-top: 30px;
+}
+  
+.App{
+    text-align: center;
+}
+  
+.TodoForm{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.task-input{
+    width: 410px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f77f00;
+    background-color: #edf2f4;
+    background: transparent;
+    outline: none;
+    text-indent: 10px;
+    margin-bottom: 30px;
+}
+  
+.task-input::placeholder{
+    opacity: 50%;
+}
+  
+.add-button{
+    width: 60px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #f77f00;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.save-button{
+    background-color: #0077b6;
+}
+  
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid #F77F00;
+    text-indent: 10px;
+}
+
+.show-task{
+    display: flex;
+    overflow: hidden;
+}
+
+.show-task > input {
+    margin-left: 10px;
+    width: 15px;
+}
+
+.completed {
+    color: #F77F00;
+    text-decoration: line-through;
+}
+
+.button-container{
+    display: flex;
+}
+.todo-btn{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.footer{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #F77F00;
+    margin-top: 60px;
+}
+
+/*tablet*/
+@media (min-width:481px) and (max-width:768px)
+{
+    .container{
+        margin-top: 100px;
+        width: 500px;
+        min-height: 400px;
+        transition: ease all .3s;
+    }
+
+    .task-container{
+        padding: 50px;
+        padding-top: 30px;
+    }
+
+    .task-input{
+        width: 300px;
+        height: 40px;
+    }
+      
+    .add-button{
+        width: 60px;
+        height: 40px;
+    }
+}
+
+/*Mobile*/
+@media (min-width:320px) and (max-width:480px)
+{
+    .container{
+        margin-top: 100px;
+        width: 300px;
+        min-height: 400px;
+        transition: ease all .3s;
+    }
+
+    h1 {
+        font-size: 32px;  
+    }
+
+    .task-container{
+        padding: 20px;
+        padding-top: 30px;
+    }
+
+    .task-input{
+        width: 180px;
+        height: 40px;
+    }
+      
+    .add-button{
+        width: 60px;
+        height: 40px;
+    }
+}
