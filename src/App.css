@@ -52,6 +52,7 @@ h1 {
     outline: none;
     text-indent: 10px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
     font-family: 'Courier New', sans-serif;
 }
 
@@ -107,6 +108,7 @@ h1 {
 .button-container{
     display: flex;
 }
+
 .todo-btn{
     border: none;
     background-color: white;
